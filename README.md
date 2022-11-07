@@ -48,7 +48,7 @@ To help translate this add-on, use the [localization system] on CurseForge. Alte
   - [GitHub]
   - [CurseForge]
   - [Wago.io]
-<!--  - [WoW Interface] -->
+  - [WoW Interface]
 
 [//]: # (Links)
 
@@ -68,7 +68,7 @@ To help translate this add-on, use the [localization system] on CurseForge. Alte
 [CurseForge]: https://www.curseforge.com/wow/addons/masque-dominos (View on CurseForge)
 [GitHub]: https://github.com/SFX-WoW/Masque_Dominos (View on GitHub)
 [Wago.io]: https://addons.wago.io/addons/masque-dominos (View on Wago.io)
-[WoW Interface]: https://www.wowinterface.com/downloads/info8869 (View on WoW Interface)
+[WoW Interface]: https://www.wowinterface.com/downloads/info26455 (View on WoW Interface)
 
 [Top]: #Top (Top of the Page)
 
