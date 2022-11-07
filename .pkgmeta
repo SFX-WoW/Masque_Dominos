@@ -1,0 +1,19 @@
+package-as: Masque_Dominos
+
+required-dependencies:
+  - masque
+
+ignore:
+  - .github
+  - .gitattributes
+  - .gitignore
+  - .pkgmeta
+  - CHANGELOG.md
+  - LICENSE.txt
+  - README.md
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
+
+wowi-archive-previous: no
