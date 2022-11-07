@@ -1,0 +1,10 @@
+# Calls a linting workflow when triggered.
+
+name: Manual Lint
+
+on: workflow_dispatch
+
+jobs:
+  linter:
+    name: Linter
+    uses: SFX-WoW/shared/.github/workflows/lint.yml@main
