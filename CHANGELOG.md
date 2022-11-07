@@ -1,4 +1,4 @@
-## 10.0.0-Alpha
+## 10.0.0
 
 ### Release Notes
 
