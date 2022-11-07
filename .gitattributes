@@ -1,0 +1,9 @@
+# Git
+.gitattributes export-ignore
+.gitignore export-ignore
+
+# GitHub
+.github export-ignore
+
+# Packager
+.pkgmeta export-ignore
