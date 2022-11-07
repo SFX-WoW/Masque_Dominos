@@ -17,6 +17,9 @@
 ## X-Website: https://github.com/SFX-WoW/Masque_Dominos
 ## X-Category: Interface Enhancements
 ## X-Credits: Tuller
+## X-Curse-Project-ID: 699643
+## X-Wago-ID: WL6JYRNv
+## X-WoWI-ID: 26455
 
 # Locales
 Locales.lua
