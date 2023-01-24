@@ -25,7 +25,7 @@ local L = Core.Locale
 -- Local
 ---
 
-local API_VERSION = 100002
+local API_VERSION = 100005
 
 -- Skin Info
 local Version = GetAddOnMetadata(AddOn, "Version")
@@ -56,18 +56,6 @@ MSQ:AddSkin("Dominos", {
 	-- Mask = Template.Mask,
 	-- Backdrop = Template.Backdrop,
 	Icon = {
-		TexCoords = {0.06, 0.94, 0.06, 0.94},
-		DrawLayer = "BACKGROUND",
-		DrawLevel = 0,
-		Width = 36,
-		Height = 36,
-		Point = "CENTER",
-		RelPoint = "CENTER",
-		OffsetX = 0,
-		OffsetY = 0,
-		-- SetAllPoints = nil,
-	},
-	SlotIcon = {
 		Texture = [[Interface\Icons\INV_Misc_Bag_08]],
 		TexCoords = {0.06, 0.94, 0.06, 0.94},
 		-- Color = {1, 1, 1, 1},
@@ -82,6 +70,7 @@ MSQ:AddSkin("Dominos", {
 		OffsetY = 0,
 		-- SetAllPoints = nil,
 	},
+	SlotIcon = "Icon",
 	Normal = {
 		Texture = [[Interface\Buttons\UI-Quickslot2]],
 		-- TexCoords = {0, 1, 0, 1},
