@@ -1,9 +1,11 @@
 ## Interface: 100007
 
 ## Author: StormFX, Tuller
-## Dependencies: Masque
 ## Title: Masque: Dominos
 ## Version: @project-version@
+
+## Dependencies: Masque
+## IconTexture: Interface\AddOns\Masque_Dominos\Textures\Icon
 
 ## Notes: Dominos skin for Masque.
 ## Notes-deDE: Dominos-Skin für Masque.
