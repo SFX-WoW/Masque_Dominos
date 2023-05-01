@@ -22,14 +22,14 @@ local AddOn, Core = ...
 local L = Core.Locale
 
 ----------------------------------------
--- Local
+-- Locals
 ---
 
 local API_VERSION = 100005
 
 -- Skin Info
-local Version = GetAddOnMetadata(AddOn, "Version")
 local Authors = {"StormFX", "Tuller"}
+local Version = "@project-version@"
 local Websites = {
 	"https://github.com/SFX-WoW/Masque_Dominos",
 	"https://www.curseforge.com/wow/addons/masque-dominos",
