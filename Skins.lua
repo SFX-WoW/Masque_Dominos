@@ -25,7 +25,7 @@ local L = Core.Locale
 -- Locals
 ---
 
-local API_VERSION = 100105
+local API_VERSION = 100207
 
 -- Skin Info
 local Authors = {"StormFX", "Tuller"}
@@ -44,7 +44,7 @@ local Websites = {
 MSQ:AddSkin("Dominos", {
 	Template = "Default (Classic)",
 	API_VERSION = API_VERSION,
-	Shape = "Square",
+	Shape = "Modern",
 
 	-- Info
 	Description = L["A port of the original Dominos skin for Masque."],
@@ -118,4 +118,8 @@ MSQ:AddSkin("Dominos", {
 	-- Cooldown = Template.Cooldown,
 	-- ChargeCooldown = Template.ChargeCooldown,
 	-- JunkIcon = Template.JunkIcon,
+	SpellAlert = {
+		Height = 33,
+		Width = 33,
+	},
 })
