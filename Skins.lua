@@ -42,7 +42,7 @@ local Websites = {
 ---
 
 MSQ:AddSkin("Dominos", {
-	Template = "Default (Classic)",
+	Template = "Blizzard Classic",
 	API_VERSION = API_VERSION,
 	Shape = "Modern",
 
