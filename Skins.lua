@@ -118,8 +118,44 @@ MSQ:AddSkin("Dominos", {
 	-- Cooldown = Template.Cooldown,
 	-- ChargeCooldown = Template.ChargeCooldown,
 	-- JunkIcon = Template.JunkIcon,
+	-- [ AutoCastShine (Classic) ]
+	AutoCastShine = {
+		Width = 32,
+		Height = 32,
+		Point = "CENTER",
+		RelPoint = "CENTER",
+		OffsetX = 1,
+		OffsetY = -1,
+		-- SetAllPoints = nil,
+	},
+	-- [ Cooldowns ]
+	Cooldown = {
+		Texture = [[Interface\AddOns\Masque\Textures\Square\Mask]],
+		EdgeTexture = [[Interface\AddOns\Masque\Textures\Modern\Edge]],
+		PulseTexture = [[Interface\Cooldown\star4]],
+		Color = {0, 0, 0, 0.7},
+		Width = 36,
+		Height = 36,
+		Point = "CENTER",
+		RelPoint = "CENTER",
+		OffsetX = -0.5,
+		OffsetY = 0.5,
+		-- SetAllPoints = nil,
+	},
+	ChargeCooldown = {
+		EdgeTexture = [[Interface\AddOns\Masque\Textures\Modern\Edge]],
+		PulseTexture = [[Interface\Cooldown\star4]],
+		Width = 34,
+		Height = 34,
+		Point = "CENTER",
+		RelPoint = "CENTER",
+		OffsetX = -0.5,
+		OffsetY = 0.5,
+		-- SetAllPoints = true,
+	},
+	-- [ SpellAlert ]
 	SpellAlert = {
-		Height = 33,
 		Width = 33,
+		Height = 33,
 	},
 })
