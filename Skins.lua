@@ -182,7 +182,15 @@ MSQ:AddSkin("Dominos", {
 	},
 	-- [ SpellAlert ]
 	SpellAlert = {
-		Width = 33,
-		Height = 33,
+		Width = 44,
+		Height = 44,
+		Classic = {
+			Height = 34,
+			Width = 34,
+		},
+		Thin = {
+			Height = 33,
+			Width = 33,
+		},
 	},
 })
