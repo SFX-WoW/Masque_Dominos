@@ -188,6 +188,10 @@ MSQ:AddSkin("Dominos", {
 			Height = 34,
 			Width = 34,
 		},
+		Modern = {
+			Height = 36,
+			Width = 36,
+		},
 		Thin = {
 			Height = 33,
 			Width = 33,
