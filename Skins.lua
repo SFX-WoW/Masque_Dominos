@@ -60,8 +60,6 @@ MSQ:AddSkin("Dominos", {
 		TexCoords = {0.06, 0.94, 0.06, 0.94},
 		-- Color = {1, 1, 1, 1},
 		BlendMode = "BLEND",
-		DrawLayer = "BACKGROUND",
-		DrawLevel = 0,
 		Width = 36,
 		Height = 36,
 		Point = "CENTER",
