@@ -25,7 +25,7 @@ local L = Core.Locale
 -- Locals
 ---
 
-local API_VERSION = 110107
+local API_VERSION = 110207
 
 -- Skin Info
 local Authors = {"StormFX", "Tuller"}
@@ -178,10 +178,14 @@ MSQ:AddSkin("Dominos", {
 		OffsetY = 0,
 		-- SetAllPoints = true,
 	},
-	-- [ SpellAlert ]
+	-- [ SpellAlerts ]
 	SpellAlert = {
 		Width = 44,
 		Height = 44,
+		AltGlow = {
+			Width = 51,
+			Height = 51,
+		},
 		Classic = {
 			Height = 34,
 			Width = 34,
@@ -190,9 +194,13 @@ MSQ:AddSkin("Dominos", {
 			Height = 36,
 			Width = 36,
 		},
-		Thin = {
-			Height = 33,
-			Width = 33,
+		["Modern-Lite"] = {
+			Height = 36.5,
+			Width = 36.5,
 		},
+	},
+	AssistedCombatHighlight = {
+		Width = 51,
+		Height = 51,
 	},
 })
