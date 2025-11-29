@@ -11,15 +11,10 @@
 local _, Core = ...
 
 ----------------------------------------
--- WoW API
+-- Locals
 ---
 
 local Locale = GetLocale()
-
-----------------------------------------
--- Local
----
-
 local L = {}
 
 ----------------------------------------
@@ -38,8 +33,7 @@ Core.Locale = setmetatable(L, {
 ---
 
 if Locale == "enGB" or Locale == "enUS" then
-	-- enUS/enGB for Reference
-	--L["A port of the original Dominos skin."] = "A port of the original Dominos skin."
+	L["A port of the original Dominos skin."] = "A port of the original Dominos skin."
 	return
 --elseif Locale == "deDE" then
 --elseif Locale == "esES" or Locale == "esMX" then
@@ -47,7 +41,8 @@ if Locale == "enGB" or Locale == "enUS" then
 --elseif Locale == "itIT" then
 --elseif Locale == "koKR" then
 --elseif Locale == "ptBR" then
---elseif Locale == "ruRU" then
+elseif Locale == "ruRU" then
+	L["A port of the original Dominos skin."] = "Порт оригинального скина Dominos для Masque."
 --elseif Locale == "zhCN" then
 --elseif Locale == "zhTW" then
 end
