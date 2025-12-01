@@ -10,8 +10,8 @@
 
 ]]
 
-local MSQ = LibStub and LibStub("Masque", true)
-if not MSQ then return end
+local Masque = LibStub and LibStub("Masque", true)
+if not Masque then return end
 
 local _, Core = ...
 
@@ -34,38 +34,39 @@ local Websites = {
 	"https://github.com/SFX-WoW/Masque_Dominos",
 	"https://www.curseforge.com/wow/addons/masque-dominos",
 	"https://addons.wago.io/addons/masque-dominos",
-	--"https://www.wowinterface.com/downloads/info8869",
+	"https://www.wowinterface.com/downloads/info26455",
 }
 
 ----------------------------------------
 -- Dominos
 ---
 
-MSQ:AddSkin("Dominos", {
-	Template = "Blizzard Classic",
+Masque:AddSkin("Dominos", {
 	API_VERSION = API_VERSION,
 	Shape = "Modern",
+	Template = "Blizzard Classic",
 
-	-- Info
-	Description = L["A port of the original Dominos skin for Masque."],
+	-- [ Info ]
 	Authors = Authors,
+	Description = L["A port of the original Dominos skin for Masque."],
+	Discord = "https://discord.gg/7MTWRgDzz8",
 	Version = Version,
 	Websites = Websites,
 
-	-- Skin
+	-- [ Skin ]
 	-- Mask = Template.Mask,
 	-- Backdrop = Template.Backdrop,
 	Icon = {
-		Texture = [[Interface\Icons\INV_Misc_Bag_08]],
+		Texture = [[Interface\Icons\INV_Misc_Bag_08]], -- SlotIcon
 		TexCoords = {0.06, 0.94, 0.06, 0.94},
-		-- Color = {1, 1, 1, 1},
-		BlendMode = "BLEND",
+		-- Color = {1, 1, 1, 1}, -- SlotIcon
+		-- BlendMode = "BLEND", -- SlotIcon
 		Width = 36,
 		Height = 36,
-		Point = "CENTER",
-		RelPoint = "CENTER",
-		OffsetX = 0,
-		OffsetY = 0,
+		-- Point = "CENTER",
+		-- RelPoint = "CENTER",
+		-- OffsetX = 0,
+		-- OffsetY = 0,
 		-- SetAllPoints = nil,
 	},
 	SlotIcon = "Icon",
@@ -76,42 +77,54 @@ MSQ:AddSkin("Dominos", {
 		-- EmptyTexture = [[Interface\Buttons\UI-Quickslot2]],
 		-- EmptyCoords = {0, 1, 0, 1},
 		-- EmptyColor = {1, 1, 1, 0.5},
-		BlendMode = "BLEND",
-		DrawLayer = "ARTWORK",
-		DrawLevel = 0,
+		-- BlendMode = "BLEND",
+		-- DrawLayer = "ARTWORK",
+		-- DrawLevel = 0,
 		Width = 66,
 		Height = 66,
-		Point = "CENTER",
-		RelPoint = "CENTER",
-		OffsetX = 0,
-		OffsetY = 0,
+		-- Point = "CENTER",
+		-- RelPoint = "CENTER",
+		-- OffsetX = 0,
+		-- OffsetY = 0,
 		-- SetAllPoints = nil,
 		UseStates = true,
 	},
 	-- Disabled = Template.Disabled,
 	-- Pushed = Template.Pushed,
 	-- Flash = Template.Flash,
-	-- HotKey = Template.HotKey,
-	-- Count = Template.Count,
-	-- Duration = Template.Duration,
 	-- Checked = Template.Checked,
 	-- SlotHighlight = Template.SlotHighlight,
-	-- Name = Template.Name,
 	-- Border = Template.Border,
+	-- DebuffBorder = Template.DebuffBorder,
+	-- EnchantBorder = Template.EnchantBorder,
 	-- IconBorder = Template.IconBorder,
 	-- Gloss = Template.Gloss,
 	-- NewAction = Template.NewAction,
 	-- SpellHighlight = Template.SpellHighlight,
-	-- AutoCastable = Template.AutoCastable,
-	-- IconOverlay = Template.IconOverlay,
 	-- UpgradeIcon = Template.UpgradeIcon,
+	-- IconOverlay = Template.IconOverlay,
 	-- IconOverlay2 = Template.IconOverlay2,
-	-- QuestBorder = Template.QuestBorder,
 	-- NewItem = Template.NewItem,
-	-- SearchOverlay = Template.SearchOverlay,
+	-- QuestBorder = Template.QuestBorder,
 	-- ContextOverlay = Template.ContextOverlay,
+	-- SearchOverlay = Template.SearchOverlay,
 	-- JunkIcon = Template.JunkIcon,
+	-- Name = Template.Name,
+	-- Duration = Template.Duration,
 	-- Highlight = Template.Highlight,
+	-- HotKey = Template.HotKey,
+	-- Count = Template.Count,
+	-- [ AutoCastShine (Classic) ]
+	-- AutoCastable = Template.AutoCastable,
+	AutoCastShine = {
+		Width = 32,
+		Height = 32,
+		-- Point = "CENTER",
+		-- RelPoint = "CENTER",
+		OffsetX = 1,
+		OffsetY = -1,
+		-- SetAllPoints = nil,
+	},
 	-- [ AutoCastOverlay (Retail) ]
 	-- AutoCast_Frame = Template.AutoCast_Frame,
 	-- AutoCast_Shine = Template.AutoCast_Shine,
@@ -122,60 +135,50 @@ MSQ:AddSkin("Dominos", {
 		-- TexCoords = {0, 1, 0, 1},
 		Width = 32,
 		Height = 32,
-		Point = "CENTER",
-		RelPoint = "CENTER",
+		-- Point = "CENTER",
+		-- RelPoint = "CENTER",
 		OffsetX = -0.5,
 		OffsetY = 0.5,
 		-- SetAllPoints = nil,
 	},
 	AutoCast_Corners = {
 		Atlas = "UI-HUD-ActionBar-PetAutoCast-Corners",
-		UseAtlasSize = false,
+		-- UseAtlasSize = false,
 		-- Color = {1, 1, 1, 1},
-		BlendMode = "BLEND",
-		DrawLayer = "OVERLAY",
-		DrawLevel = 1,
+		-- BlendMode = "BLEND",
+		-- DrawLayer = "OVERLAY",
+		-- DrawLevel = 1,
 		Width = 38,
 		Height = 38,
-		Point = "CENTER",
-		RelPoint = "CENTER",
+		-- Point = "CENTER",
+		-- RelPoint = "CENTER",
 		OffsetX = -0.5,
 		OffsetY = 0.5,
 		-- SetAllPoints = true,
-	},
-	-- [ AutoCastShine (Classic) ]
-	AutoCastShine = {
-		Width = 32,
-		Height = 32,
-		Point = "CENTER",
-		RelPoint = "CENTER",
-		OffsetX = 1,
-		OffsetY = -1,
-		-- SetAllPoints = nil,
 	},
 	-- [ Cooldowns ]
 	Cooldown = {
 		Texture = [[Interface\AddOns\Masque\Textures\Square\Mask]],
 		EdgeTexture = [[Interface\AddOns\Masque\Textures\Modern\Edge]],
-		PulseTexture = [[Interface\Cooldown\star4]],
+		-- PulseTexture = [[Interface\Cooldown\star4]],
 		Color = {0, 0, 0, 0.7},
 		Width = 36,
 		Height = 36,
-		Point = "CENTER",
-		RelPoint = "CENTER",
-		OffsetX = 0,
-		OffsetY = 0,
+		-- Point = "CENTER",
+		-- RelPoint = "CENTER",
+		-- OffsetX = 0,
+		-- OffsetY = 0,
 		-- SetAllPoints = nil,
 	},
 	ChargeCooldown = {
 		EdgeTexture = [[Interface\AddOns\Masque\Textures\Modern\Edge]],
-		PulseTexture = [[Interface\Cooldown\star4]],
+		-- PulseTexture = [[Interface\Cooldown\star4]],
 		Width = 34,
 		Height = 34,
-		Point = "CENTER",
-		RelPoint = "CENTER",
-		OffsetX = 0,
-		OffsetY = 0,
+		-- Point = "CENTER",
+		-- RelPoint = "CENTER",
+		-- OffsetX = 0,
+		-- OffsetY = 0,
 		-- SetAllPoints = true,
 	},
 	-- [ SpellAlerts ]
