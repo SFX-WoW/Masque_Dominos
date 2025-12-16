@@ -44,5 +44,6 @@ if Locale == "enGB" or Locale == "enUS" then
 elseif Locale == "ruRU" then
 	L["A port of the original Dominos skin."] = "Порт оригинального скина Dominos для Masque."
 --elseif Locale == "zhCN" then
---elseif Locale == "zhTW" then
+elseif Locale == "zhTW" then
+	L["A port of the original Dominos skin for Masque."] = "Masque原始Dominos外觀移植版。"
 end
