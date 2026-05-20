@@ -33,16 +33,17 @@ Core.Locale = setmetatable(L, {
 ---
 
 if Locale == "enGB" or Locale == "enUS" then
-	L["A port of the original Dominos skin."] = "A port of the original Dominos skin."
+	L["A port of the original Dominos skin for Masque."] = "A port of the original Dominos skin for Masque."
 	return
 --elseif Locale == "deDE" then
 --elseif Locale == "esES" or Locale == "esMX" then
 --elseif Locale == "frFR" then
 --elseif Locale == "itIT" then
 --elseif Locale == "koKR" then
---elseif Locale == "ptBR" then
+elseif Locale == "ptBR" then
+	L["A port of the original Dominos skin for Masque."] = "Uma adaptação da aparência original Dominos para o Masque."
 elseif Locale == "ruRU" then
-	L["A port of the original Dominos skin."] = "Порт оригинального скина Dominos для Masque."
+	L["A port of the original Dominos skin for Masque."] = "Порт оригинального скина Dominos для Masque."
 --elseif Locale == "zhCN" then
 elseif Locale == "zhTW" then
 	L["A port of the original Dominos skin for Masque."] = "Masque原始Dominos外觀移植版。"
