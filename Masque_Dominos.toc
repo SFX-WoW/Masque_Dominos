@@ -5,7 +5,7 @@
 ## Version: @project-version@
 
 ## Category: Masque
-## Dependencies: Masque
+## OptionalDeps: Masque
 ## IconTexture: Interface\AddOns\Masque_Dominos\Textures\Icon
 
 ## Notes: Dominos skin for Masque.
