@@ -25,7 +25,7 @@ local L = Core.Locale
 -- Locals
 ---
 
-local API_VERSION = 120000
+local API_VERSION = 120100
 
 -- Skin Info
 local Authors = {"StormFX", "Tuller"}
@@ -65,14 +65,17 @@ Masque:AddSkin("Dominos", {
 		Height = 66,
 		UseStates = true,
 	},
-	-- [ AutoCast (Classic) ]
-	AutoCastShine = {
-		Width = 32,
-		Height = 32,
-		OffsetX = 1,
-		OffsetY = -1,
+	-- [ AutoCastOverlay ]
+	AutoCast_Frame = {
+		Width = 37,
+		Height = 37,
+		Classic = {
+			Width = 32,
+			Height = 32,
+			OffsetX = 0.5,
+			OffsetY = -0.5,
+		},
 	},
-	-- [ AutoCastOverlay (Retail) ]
 	AutoCast_Mask = {
 		Texture = [[Interface\AddOns\Masque\Textures\Modern\AutoCast-Mask]],
 		Width = 32,
@@ -86,8 +89,15 @@ Masque:AddSkin("Dominos", {
 		Height = 38,
 		OffsetX = -0.5,
 		OffsetY = 0.5,
+		Classic = {
+			Atlas = "UI-HUD-ActionBar-PetAutoCast-Corners",
+			Width = 66,
+			Height = 66,
+			OffsetX = -0.5,
+			OffsetY = 0.5,
+		},
 	},
-	-- [ Cooldowns ]
+	-- [ Cooldown ]
 	Cooldown = {
 		Texture = [[Interface\AddOns\Masque\Textures\Square\Mask]],
 		EdgeTexture = [[Interface\AddOns\Masque\Textures\Modern\Edge]],
@@ -101,7 +111,7 @@ Masque:AddSkin("Dominos", {
 		Width = 34,
 		Height = 34,
 	},
-	-- [ SpellAlerts ]
+	-- [ SpellAlert ]
 	SpellAlert = {
 		Width = 44,
 		Height = 44,
